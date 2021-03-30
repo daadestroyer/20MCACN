@@ -3,7 +3,7 @@ Step-2 : In VM2 sudo apt-get update
 Step-3 : In VM3 sudo apt-get update
 Step-4 : Check all three VM are in NAT network
 Step-5 : In VM1 ifconfig
-Step-6 : nmap iptables -L -n --line
+Step-6 : In VM1 nmap iptables -L -n --line
 Step-7 : from VM2 and VM3 ping to VM1
 Step-8 : Now both VM 1 and VM2 can able to ping to VM3
 Step-9 : In VM1 sudo iptables -P INPUT DROP
