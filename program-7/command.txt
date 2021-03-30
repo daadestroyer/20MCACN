@@ -8,6 +8,6 @@ Step-7 : from VM2 and VM3 ping to VM1
 Step-8 : Now both VM 1 and VM2 can able to ping to VM3
 Step-9 : In VM1 sudo iptables -P INPUT DROP
 Step-10 : In VM1 sudo iptables -L -n --line
-Step-11 : In VM1 sudo iptables -I INPUT -S <IP of VM3> to block VM3 not to send packet
+Step-11 : In VM1 sudo iptables -I INPUT -s <IP of VM3> -j DROP (to block VM3 not to send packet)
 
 
