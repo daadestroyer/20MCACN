@@ -18,4 +18,4 @@ Step:14 : In VM1 sudo iptables -m INPUT -s <mac of vm3> -j DROP
 
 COMMAND TO KNOW THE MAC ADDRESS
 --------------------------------
-cat /sys/class/net/your_mac_address/address
+cat /sys/class/net/your_interface_name/address
