@@ -1,15 +1,17 @@
 Step-1 : In VM1 sudo apt-get update
 Step-2 : In VM2 sudo apt-get update
 Step-3 : In VM3 sudo apt-get update
-Step-4 : Check all three VM are in NAT network
-Step-5 : In VM1 ifconfig
-Step-6 : In VM1 nmap iptables -L -n --line
-Step-7 : from VM2 and VM3 ping to VM1
-Step-8 : Now both VM 1 and VM2 can able to ping to VM3
-Step-9 : In VM1 sudo iptables -P INPUT DROP
-Step-10 : In VM1 sudo iptables -L -n --line
-Step-11 : In VM1 sudo iptables -I INPUT -s <IP of VM3> -j DROP (to block VM3 not to send packet)
-Step:12 : In VM1 sudo iptables -m INPUT -s <mac of vm3> -j DROP 
+Step-4 : Change network to NAT
+Step-5 : Install nmap in vm1 vm2 vm3
+Step-6 : Again change network to host-only adapter 
+Step-7 : In VM1 ifconfig
+Step-8 : In VM1 nmap iptables -L -n --line (to create firewall in VM1)
+Step-9 : from VM2 and VM3 ping to VM1
+Step-10 : Now both VM 1 and VM2 can able to ping to VM3
+Step-11 : In VM1 sudo iptables -P INPUT DROP
+Step-12 : In VM1 sudo iptables -L -n --line
+Step-13 : In VM1 sudo iptables -I INPUT -s <IP of VM3> -j DROP (to block VM3 not to send packet)
+Step:14 : In VM1 sudo iptables -m INPUT -s <mac of vm3> -j DROP 
 
 
 
