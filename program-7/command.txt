@@ -12,3 +12,8 @@ Step-11 : In VM1 sudo iptables -I INPUT -s <IP of VM3> -j DROP (to block VM3 not
 Step:12 : In VM1 sudo iptables -m INPUT -s <mac of vm3> -j DROP 
 
 
+
+
+COMMAND TO KNOW THE MAC ADDRESS
+--------------------------------
+cat /sys/class/net/your_mac_address/address
