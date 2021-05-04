@@ -1,3 +1,4 @@
+# build a firewall to restrict a network access using firewall or build a firewall with SNAT or DNAT
 Step-1 : In VM1 sudo apt-get update
 Step-2 : In VM2 sudo apt-get update
 Step-3 : In VM3 sudo apt-get update

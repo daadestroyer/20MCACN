@@ -1,3 +1,4 @@
+# demonstrate basic troubleshooting using ping,traceroute,ifconfig,nsloopup,netstat and route
 ifconfig
 --------
 Ifconfig is used to configure the kernel-resident network interfaces. It is used at boot time to set up interfaces as necessary. 

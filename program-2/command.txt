@@ -1,3 +1,4 @@
+# create a LAN using physical network/virtual machine and install FTP server to demonstrate file transfer
 sending file from VM1 to VM2
 ----------------------------
 vm1 : change network to NAT
